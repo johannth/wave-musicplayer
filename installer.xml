@@ -1,0 +1,6 @@
+<extension name="Wave music player" thumbnailUrl="" description="A Wave gadget to play music files">
+    <author name="Jóhann Þ. Bergþórsson"/>
+    <menuHook location="TOOLBAR" text="Add Music" iconUrl="">
+        <insertGadget url="https://dl.dropbox.com/u/3075300/Player.xml"/>
+    </menuHook>
+</extension>
