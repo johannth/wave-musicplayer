@@ -9,8 +9,12 @@
 
     <Content type="html"><![CDATA[
 	<style type="text/css">
-		#gadget { background-color: #C9E2FC; }
-		#url { width: 470px; padding-bottom:5px; }
+		#gadget { 
+			padding: 5px; 
+			background-color: #C9E2FC; 
+			border-radius: 5px;
+		}
+		#url { width: 470px; margin-bottom:5px; }
 	</style>
 
     <script type="text/javascript" src="http://www.google.com/jsapi"></script>
