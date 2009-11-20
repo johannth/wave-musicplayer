@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+    <ModulePrefs title="Music Player">
+        <Require feature="wave" />
+        <Require feature="flash" />
+        <Require feature="locked-domain" />
+        <Require feature="dynamic-height" />
+    </ModulePrefs>
+
+    <Content type="html"><![CDATA[
+	<style type="text/css">
+		
+	</style>
+
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.3.2");
+        
+        function stateUpdated()
+        {
+            var url = wave.getState().get("url");
+            if(url) {
+                $("#url").val(url);
+                embedFlash(url);
+            }
+        }
+
+        function init() {        
+            $("#url").blur(function() {
+                var url = $(this).val();
+                if(url != "") {
+                    embedFlash(url);
+                }
+                wave.getState().submitDelta({"url": url});
+            });
+            
+            if (wave && wave.isInWaveContainer()) {
+                wave.setStateCallback(stateUpdated);
+            }
+        }
+        
+        function embedFlash(url)
+        {
+            gadgets.flash.embedFlash('http://dl.dropbox.com/u/3075300/player.swf','player', 9, 
+                    {width: 470,
+                     height:20,
+                    flashvars: "file=" + url });
+        }
+        
+        gadgets.util.registerOnLoadHandler(init);
+    </script>
+    
+    <input id="url" type="text" />
+    <div id="player"></div>
+   ]]>  
+  </Content>
+
+</Module>
