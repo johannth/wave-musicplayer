@@ -9,13 +9,14 @@
 
     <Content type="html"><![CDATA[
 	<style type="text/css">
+		html, body { height: 50px; }
 		#gadget { 
 			width:470px;
 			padding: 5px; 
 			background-color: #C9E2FC; 
 			-moz-border-radius: 5px;
 			-webkit-border-radius: 5px;
-			border: 1px solid #000;
+			border: 1px solid #5590D2;
 		}
 		#url { width: 470px; margin-bottom:5px; }
 	</style>
