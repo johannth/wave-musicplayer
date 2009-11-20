@@ -9,7 +9,8 @@
 
     <Content type="html"><![CDATA[
 	<style type="text/css">
-		
+		#gadget { background-color: #C9E2FC; }
+		#url { width: 470px; padding-bottom:5px; }
 	</style>
 
     <script type="text/javascript" src="http://www.google.com/jsapi"></script>
@@ -49,9 +50,10 @@
         
         gadgets.util.registerOnLoadHandler(init);
     </script>
-    
-    <input id="url" type="text" />
-    <div id="player"></div>
+    <div id="gadget">
+    	<input id="url" type="text" />
+    	<div id="player"></div>
+	</div>
    ]]>  
   </Content>
 
