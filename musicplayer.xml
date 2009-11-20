@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-    <ModulePrefs title="Music Player">
+    <ModulePrefs title="Music Player"  height="50" 
+		author="Jóhann Þ. Bergþórsson" author_email="johann.thorvaldur@gmail.com">
         <Require feature="wave" />
         <Require feature="flash" />
         <Require feature="locked-domain" />
-        <Require feature="dynamic-height" />
     </ModulePrefs>
 
     <Content type="html"><![CDATA[
 	<style type="text/css">
-		html, body { height: 50px; }
 		#gadget { 
+			margin:5px;
 			width:470px;
 			padding: 5px; 
 			background-color: #C9E2FC; 
