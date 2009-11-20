@@ -10,9 +10,12 @@
     <Content type="html"><![CDATA[
 	<style type="text/css">
 		#gadget { 
+			width:470px;
 			padding: 5px; 
 			background-color: #C9E2FC; 
-			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border: 1px solid #000;
 		}
 		#url { width: 470px; margin-bottom:5px; }
 	</style>
