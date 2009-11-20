@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-    <ModulePrefs title="Music Player"  height="50">
+    <ModulePrefs title="Music Player"  height="70">
         <Require feature="wave" />
         <Require feature="flash" />
         <Require feature="locked-domain" />
